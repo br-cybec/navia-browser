@@ -1,0 +1,298 @@
+/* Botones solo icono, sin borde ni fondo, excepto el de nueva pestaña */
+button.icon-only, .icon-only, GtkButton.icon-only {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	min-width: 0;
+	min-height: 0;
+	padding: 0;
+	margin: 0 2px;
+}
+button.icon-only:hover, .icon-only:hover, GtkButton.icon-only:hover {
+	background: transparent;
+	border-radius: 50%;
+}
+/* --- Chrome-like tab styles --- */
+.chrome-tab {
+	background: #e3e3e3;
+	border-radius: 8px 8px 0 0;
+	border: 1px solid #bdbdbd;
+	margin-right: 2px;
+	min-width: 36px;
+	min-height: 22px;
+	box-shadow: 0 2px 4px #0001;
+	transition: box-shadow 0.2s, background 0.2s;
+}
+.chrome-tab.active-tab {
+	background: #fff;
+	box-shadow: 0 4px 12px #0002;
+	border-bottom: 1.5px solid #fff;
+}
+.chrome-tab-label {
+	color: #222;
+	font-size: 13px;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	font-weight: 400;
+	padding: 0 2px;
+}
+.chrome-tab-close {
+	background: transparent;
+	border: none;
+	min-width: 12px;
+	min-height: 12px;
+	padding: 0;
+	margin: 0 2px 0 0;
+	opacity: 0.7;
+	transition: opacity 0.2s;
+}
+.chrome-tab-close:hover {
+	opacity: 1;
+	background: #f5f5f5;
+	border-radius: 50%;
+}
+/* Quitar fondo y borde al botón de cerrar pestaña en la barra lateral */
+#tab-close-circle {
+	background: none;
+	border-radius: 7px;
+	min-width: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	transition: box-shadow 0.2s;
+}
+#tab-close-circle:hover {
+	box-shadow: 0 0 2px 2px #ff444488;
+	background: none;
+}
+/* === TEMA AZUL OSCURO === */
+.theme-blue window, .theme-blue .window, .theme-blue GtkWindow {
+	background-color: #0d2033;
+	color: #e0e0e0;
+}
+
+.theme-blue headerbar, .theme-blue .header-bar, .theme-blue GtkHeaderBar {
+	background-color: #183153;
+	color: #e0e0e0;
+	border: none;
+	box-shadow: none;
+}
+
+.theme-blue entry, .theme-blue GtkEntry {
+	background-color: #1a2a40;
+	color: #e0e0e0;
+	border-radius: 6px;
+	border: 1px solid #35506b;
+	padding: 2px 6px;
+	font-size: 13px;
+}
+
+.theme-blue button, .theme-blue GtkButton {
+	background-color: #0d2033;
+	color: #e0e0e0;
+	border-radius: 4px;
+	border: 1px solid #35506b;
+	padding: 1px 2px;
+	min-width: 12px;
+	min-height: 12px;
+	font-size: 13px;
+}
+
+.theme-blue button.close-tab, .theme-blue .close-tab, .theme-blue .tab-close, .theme-blue .tab-close-button {
+	min-width: 12px;
+	min-height: 12px;
+	padding: 0 1px;
+	margin: 0 1px;
+}
+
+.theme-blue button:hover, .theme-blue GtkButton:hover {
+	background-color: #22406b;
+}
+
+.theme-blue notebook, .theme-blue GtkNotebook {
+	background-color: #0d2033;
+	color: #e0e0e0;
+	border: none;
+}
+
+.theme-blue .notebook tab, .theme-blue .notebook tab label, .theme-blue GtkNotebook tab, .theme-blue GtkNotebook tab label {
+	background-color: #0d2033;
+	color: #e0e0e0;
+	border: none;
+	padding: 1px 4px;
+	font-size: 12px;
+}
+
+.theme-blue list, .theme-blue GtkListBox, .theme-blue GtkListBoxRow {
+	background-color: #1a2a40;
+	color: #e0e0e0;
+}
+/* === TEMA OSCURO FORZADO PARA DIALOGOS === */
+.theme-dark, .theme-dark * {
+	background-color: #232629;
+	color: #e0e0e0;
+	border-color: #444;
+}
+/* Diálogos y ventanas secundarias oscuras */
+GtkDialog, dialog, .dialog, GtkMessageDialog {
+	background-color: #232629;
+	color: #e0e0e0;
+}
+GtkDialog * {
+	background-color: #232629;
+	color: #e0e0e0;
+}
+GtkMessageDialog * {
+	background-color: #232629;
+	color: #e0e0e0;
+}
+GtkFileChooserDialog, .filechooser, .file-chooser {
+	background-color: #232629;
+	color: #e0e0e0;
+}
+GtkNotebook > GtkLabel, GtkDialog GtkLabel, GtkDialog GtkEntry, GtkDialog GtkButton {
+	background-color: #232629;
+	color: #e0e0e0;
+}
+/* Menú contextual oscuro */
+GtkMenu, menu, .context-menu, .popup, .menu {
+	background-color: #232629;
+	color: #e0e0e0;
+	border: 1px solid #444;
+}
+GtkMenuItem, menuitem, .menu-item {
+	background-color: #232629;
+	color: #e0e0e0;
+	border: none;
+	padding: 6px 18px;
+	font-size: 13px;
+}
+GtkMenuItem:hover, menuitem:hover, .menu-item:hover {
+	background-color: #33373a;
+	color: #fff;
+}
+/* === TEMA OSCURO === */
+window, .window, GtkWindow {
+	background-color: #232629;
+	color: #e0e0e0;
+}
+
+headerbar, .header-bar, GtkHeaderBar {
+	background-color: #181a1b;
+	color: #e0e0e0;
+	border: none;
+	box-shadow: none;
+}
+
+entry, GtkEntry {
+	background-color: #2b2b2b;
+	color: #e0e0e0;
+	border-radius: 6px;
+	border: 1px solid #444;
+	padding: 2px 6px;
+	font-size: 13px;
+}
+
+button, GtkButton {
+	background-color: #232629;
+	color: #e0e0e0;
+	border-radius: 4px;
+	border: 1px solid #444;
+	padding: 1px 2px;
+	min-width: 12px;
+	min-height: 12px;
+	font-size: 13px;
+}
+
+button.close-tab, .close-tab, .tab-close, .tab-close-button {
+	min-width: 12px;
+	min-height: 12px;
+	padding: 0 1px;
+	margin: 0 1px;
+}
+
+button:hover, GtkButton:hover {
+	background-color: #33373a;
+}
+
+notebook, GtkNotebook {
+	background-color: #232629;
+	color: #e0e0e0;
+	border: none;
+}
+
+.notebook tab, .notebook tab label, GtkNotebook tab, GtkNotebook tab label {
+	background-color: #232629;
+	color: #e0e0e0;
+	border: none;
+	padding: 1px 4px;
+	font-size: 12px;
+}
+
+list, GtkListBox, GtkListBoxRow {
+	background-color: #232629;
+	color: #e0e0e0;
+}
+
+/* === TEMA CLARO === */
+.theme-light window, .theme-light .window, .theme-light GtkWindow {
+	background-color: #4d4e50;
+	color: #232629;
+}
+
+.theme-light headerbar, .theme-light .header-bar, .theme-light GtkHeaderBar {
+	background-color: #6d6e70;
+	color: #232629;
+	border: none;
+	box-shadow: none;
+}
+
+.theme-light entry, .theme-light GtkEntry {
+	background-color: #f0f0f0;
+	color: #232629;
+	border-radius: 6px;
+	border: 1px solid #888;
+	padding: 2px 6px;
+	font-size: 13px;
+}
+
+.theme-light button, .theme-light GtkButton {
+	background-color: #e0e0e0;
+	color: #232629;
+	border-radius: 4px;
+	border: 1px solid #888;
+	padding: 2px 4px;
+	min-width: 20px;
+	min-height: 20px;
+	font-size: 13px;
+}
+
+.theme-light button.close-tab, .theme-light .close-tab, .theme-light .tab-close, .theme-light .tab-close-button {
+	min-width: 18px;
+	min-height: 18px;
+	padding: 0;
+	margin: 0 2px;
+}
+
+.theme-light button:hover, .theme-light GtkButton:hover {
+	background-color: #cccccc;
+}
+
+.theme-light notebook, .theme-light GtkNotebook {
+	background-color: #4d4e50;
+	color: #232629;
+	border: none;
+}
+
+.theme-light .notebook tab, .theme-light .notebook tab label, .theme-light GtkNotebook tab, .theme-light GtkNotebook tab label {
+	background-color: #4d4e50;
+	color: #232629;
+	border: none;
+	padding: 2px 8px;
+	font-size: 13px;
+}
+
+.theme-light list, .theme-light GtkListBox, .theme-light GtkListBoxRow {
+	background-color: #f0f0f0;
+	color: #232629;
+}
